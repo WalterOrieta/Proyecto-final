@@ -1,0 +1,162 @@
+header {
+	display: block;
+	background-color: $background-color-header;
+	color: $color-letter-header;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	.container-1 {
+		width: 100%;
+		max-width: 1600px;
+		margin: 0 auto;
+		padding: 0 40px;
+		.hader__wrapper {
+			display: flex;
+			align-items: center;
+			padding: 20px 0;
+			.container-navbar-1 {
+				flex: 1 1 0;
+				display: flex;
+				align-items: center;
+				ul {
+					display: flex;
+					flex-wrap: wrap;
+					row-gap: 12px;
+					list-style: none;
+					padding: 0;
+					margin: 0;
+				}
+				li {
+					margin-right: 32px;
+					a {
+						display: block;
+						position: relative;
+						width: max-content;
+						color: $color-letter-2;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.container-navbar-1 {
+			.navbar {
+				.hamburgesa {
+					display: none;
+					cursor: pointer;
+					.bar {
+						display: block;
+						width: 25px;
+						height: 3px;
+						margin: 5px;
+						-webkit-animation: all 0.3s ease-in-out;
+						animation: all 0.3s ease-in-out;
+						background-color: $background-color_2;
+					}
+				}
+			}
+		}
+	}
+}
+
+//SCSS DEL LOGO, ICONS, EDIOMA
+
+header {
+	.container-1 {
+		.hader__wrapper {
+			.header__secondary-link {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				.header__cross-border {
+					display: grid;
+					grid-auto-flow: column;
+					grid-gap: 18px;
+					gap: 18px;
+					margin-right: 30px;
+					input {
+						color: $color-icons;
+						font: inherit;
+						margin: 0;
+						text-align: inherit;
+					}
+					.pop-container {
+						input {
+							color: $color-icons;
+							font: inherit;
+							margin: 0;
+							text-align: inherit;
+						}
+						.visually-hidden {
+							position: absolute !important;
+							overflow: hidden;
+							clip: rect(0 0 0 0);
+							height: 1px;
+							width: 1px;
+							margin: -1px;
+							padding: 0;
+							border: 0;
+						}
+						button {
+							padding: 0;
+							overflow: visible;
+							background: none;
+							border: none;
+							border-radius: 0;
+							cursor: pointer;
+							appearance: none;
+							touch-action: manipulation;
+							color: $color-icons;
+							font: inherit;
+							margin: 0;
+							text-align: inherit;
+						}
+						.popover-button {
+							width: max-content;
+							.chvron {
+								position: relative;
+								top: -1px;
+								display: inline-block;
+								vertical-align: middle;
+								background: none;
+								pointer-events: none;
+								overflow: visible;
+							}
+							.icon--inline {
+								display: inline-block;
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+				.header__icon-list {
+					display: grid;
+					grid-auto-flow: column;
+					grid-gap: 20px;
+					gap: 20px;
+					justify-content: flex-start;
+					align-items: center;
+				}
+				.header__icon-wrapper {
+					display: block;
+					position: relative;
+					color: $color-icons;
+					text-decoration: none;
+					i {
+						display: block;
+						background: none;
+						pointer-events: none;
+						overflow: visible;
+						font-size: 1.4em;
+					}
+				}
+			}
+		}
+	}
+}
+.slider {
+	padding-top: 80px;
+	width: 100%;
+}

@@ -1,0 +1,101 @@
+//SCSS DEL FOOTER DE IMG
+.footer-img {
+	.container-1 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		img {
+			height: auto;
+			max-width: 20%;
+			border-style: none;
+			vertical-align: top;
+		}
+	}
+}
+
+//SCSS DEL FOOTER DE CONTACTOS
+
+div {
+
+	.footer {
+		padding-top: 48px;
+		background-color: $background-footer;
+		color: $color-letter-footer;
+
+		.container-1 {
+			width: 100%;
+			max-width: 1600px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 0 40px;
+			.footer__inner {
+				.footer__item-list {
+					display: grid;
+					grid-gap: 40px;
+					gap: 40px;
+					grid-template-columns: 1fr 1fr 1fr;
+					justify-content: space-between;
+					.footer__item {
+						max-width: 325px;
+						word-break: break-word;
+						.footer__item-title {
+							margin-bottom: 12px;
+						}
+						.heading--small {
+							font-size: 12px;
+							font-weight: 600;
+							letter-spacing: 1px;
+							font-size: 12px;
+							letter-spacing: 1px;
+						}
+						.footer__item--content {
+							ul {
+								list-style: none;
+								padding: 0;
+								margin: 0;
+							}
+							li {
+								a {
+									display: inline-block;
+									color: $color-inherit;
+									text-decoration: none;
+									font-size: 1.2em;
+									padding: 5px 0;
+								}
+							}
+						}
+						.footer__item-content {
+							.form {
+								display: flex;
+								text-align: center;
+								justify-content: center;
+								label {
+									margin-top: 30px;
+								}
+								input {
+									height: 45px;
+									width: 300px;
+									background: rgba(40,40,40);
+									border: 1.5px solid #fff;
+									color: $color-btn-footer;
+									&::placeholder {
+										padding: 0 15px;
+									}
+								}
+								button {
+									margin-top: 10px;
+									background-color: $background-btn-10-off;
+									height: 40px;
+									width: 300px;
+									letter-spacing: 2px;
+									color: $color-btn-footer;
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

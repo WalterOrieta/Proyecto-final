@@ -1,0 +1,243 @@
+.items-objet {
+
+	.container-1 {
+		display: flex;
+		background: #fafafa;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 20px 15px 0;
+		overflow: auto;
+
+		a {
+			min-width: 85px;
+			padding-left: 20px;
+			word-break: break-all;
+			font-size: 14px;
+			line-height: 16px;
+			color: $color-letter-items;
+			text-decoration: none;
+			text-align: center;
+
+			img {
+				border-radius: 50%;
+				max-width: 100%;
+				display: block;
+				border: 1px solid gray;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}
+
+
+//SCSS DE LOS OBJETOS MAS VENDIDOS
+.mas-vendidos {
+
+	.container-text {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 100px;
+
+		h2 {
+			font-weight: 600;
+			font-size: 15px;
+			letter-spacing: 1px;
+			display: block;
+			color: $color-h2;
+		}
+
+		h3 {
+			margin: 10px 0;
+			font-size: 40px;
+		}
+	}
+
+	.container-1 {
+
+		.container-2 {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+
+			.objet {
+				padding: 30px 12px;
+				text-align: center;
+
+				.paralelas {
+
+					&:hover {
+						box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+						transition: .3s;
+					}
+				}
+
+				.precios {
+					display: flex;
+					flex-direction: column;
+					padding: 15px 0;
+					font-size: 1.2rem;
+
+					a {
+						text-decoration: none;
+						color: $color-letter-1;
+						padding: 5px 0;
+					}
+				}
+			}
+
+			img {
+				width: 360px;
+				height: 470px;
+			}
+		}
+
+		.btn-1 {
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 50px;
+
+			a {
+				background: gray;
+				padding: 20px 40px;
+				letter-spacing: 3px;
+				text-decoration: none;
+				color: $color-btn;
+
+				&:hover {
+					background: #969595;
+					color: $color-btn-hover;
+					transition: .2s;
+				}
+			}
+		}
+	}
+}
+
+
+//SCSS DE LAS VENTAS Y ENVIOS MUNDIAL
+
+.ventas {
+	background: $color-background;
+    margin-top: 100px;
+
+	.container-1 {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin: 40px;
+		display: block;
+
+		.container-2 {
+			display: flex;
+			flex-wrap: wrap;
+			display: flow-root;
+		}
+
+		.container-3 {
+			width: 100%;
+			max-width: 1600px;
+			margin: 0px auto;
+			padding: 0px 40px;
+
+			.native {
+				display: block;
+
+				.content-box-1 {
+					display: block;
+
+					.content-box-2 {
+						display: flex;
+						margin: 40px;
+
+						.caja {
+							display: block;
+							text-align: center;
+							padding: 0px 40px;
+							width: 100%;
+							scroll-snap-align: center;
+							scroll-snap-stop: always;
+
+							.h2 {
+								font-size: 20px;
+							}
+
+							.icon {
+								margin-bottom: 16px;
+                                
+								i {
+									display: block;
+									font-size: 1.5em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//SCSS DE LA SECCTION ATLETAS 
+
+.atletas {
+
+	.container-1 {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin: 200px 0;
+
+		.container-img {
+			padding: 9px;
+
+			img {
+				width: 600px;
+			}
+		}
+
+		.container-text-2 {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			h2 {
+				display: block;
+				font-size: 20px;
+				padding: 10px 0;
+				color: $color-letter-atle;
+			}
+
+			h3 {
+				display: block;
+				font-size: 40px;
+				padding-bottom: 20px;
+			}
+
+			.text {
+				padding: 20px;
+
+				P{
+					font-size: 19px;
+				}
+			}
+		}
+
+		.container-text-1 {
+
+			.btn-1 {
+				text-align: center;
+				padding-top: 50px;
+
+				a {
+					background: $color-letter-atle;
+					padding: 20px;
+					letter-spacing: 2px;
+					text-decoration: none;
+					color: $color-letter-white;
+				}
+			}
+		}
+	}
+}
